@@ -1,0 +1,22 @@
+# Example future batch format. The MVP does not execute this file yet.
+project: JavaSecAtlas
+
+checks:
+  - mvn test
+
+tasks:
+  - title: Add SARIF ruleId support
+    goal: Ensure every finding in SARIF output has a stable ruleId.
+    files:
+      - src/main/java/org/example/report/SarifReporter.java
+    acceptance:
+      - mvn test passes
+      - generated SARIF is accepted by GitHub Code Scanning
+
+  - title: Improve HTML report template
+    goal: Add severity badges and collapsible code snippets.
+    files:
+      - src/main/resources/templates/report.html
+    acceptance:
+      - existing markdown report output is not affected
+      - visual report is readable on desktop and mobile
