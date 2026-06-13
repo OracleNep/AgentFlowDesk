@@ -11,6 +11,8 @@ It helps developers turn AI-agent work into structured, reviewable, and reusable
 - Keep AI-agent work auditable instead of scattered across chat windows
 
 > MVP status: CLI-first. The web task board is planned after the core workflow is stable.
+>
+> CI note: the test workflow validates installation and the core Context Pack/export/run path on Python 3.10, 3.11, and 3.12.
 
 ## Why this exists
 
