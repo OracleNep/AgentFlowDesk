@@ -1,5 +1,7 @@
 # AgentFlowDesk
 
+English | [简体中文](README.zh-CN.md)
+
 AgentFlowDesk is a **local-first task board and context manager for AI coding agents**.
 
 It helps developers turn AI-agent work into structured, reviewable, and reusable workflows:
